@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .description {
+      margin-bottom: 30px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px 30px;
+    }
+
+    .item {
+      width: 260px;
+      margin-bottom: 30px;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .caption {
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .button-wrapper {
+      margin-top: 40px;
+    }
+
+    .button-see-all {
+      border: 1px solid #09064b;
+      padding: 12px 22px;
+      color: #09064b;
+      background-color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      border-radius: 0 0 0 6px;
+      box-shadow: 2px 2px 6px rgba(9, 6, 75, 0.15);
+      transition: background-color 0.25s, color 0.25s;
+    }
+
+    .button-see-all:hover {
+      background-color: #09064b;
+      color: #fff;
+    }
+
+    .button-icon {
+      background-color: #09064b;
+      color: #fff;
+      border: none;
+      padding: 12px 22px;
+      font-size: 14px;
+      border-radius: 0 0 6px 0;
+      box-shadow: 2px 2px 6px rgba(9, 6, 75, 0.15);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Icon is a small square in center */
+    .button-icon::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border: 1px solid #fff;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero-section">
+    <nav>
+      <div class="nav-content" style="position: fixed; margin: 0 105.5px; padding: 0 15px; font-size: 15px;">
+        <div>
+          <img src="images/dan1.svg" alt="" style="height: 100;width: 53.39;padding-right: 63px;">
+        </div>
+        <ul class="nav-links">
+          <li class="dropdown"><a href="#">About Us</a>
+            <div class="drop-content" style="color:blue;font-size: 12px;">
+              <ul>
+                <li>Who We Are</li>
+                <li>Vision & Mission</li>
+                <li>Leadership</li>
+                <li>History & Strategy</li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown" style="color:  #fff;"><a href="hero.html">Our Businesses</a>
+            <div class="drop-content1">
+              <ul>
+                <div class="grid"
+                  style="padding-top: 35px;font-size: 12px;color: blue; padding-right: 65px; padding-left: 65px;width: 690px; height: auto; ">
+                  <div class="con">
+                    <li>Cement Manufacturing</li>
+                  </div>
+                  <div class="con">
+                    <li>Rice Farming</li>
+                  </div>
+                  <div class="con">
+                    <li>Polysacks</li>
+                  </div>
+                  <div class="con">
+                    <li>Sugar Refining</li>
+                  </div>
+                  <div class="con">
+                    <li>Automotive</li>
+                  </div>
+                  <div class="con">
+                    <li>Real Estate</li>
+                  </div>
+                  <div class="con">
+                    <li>Salt & Seasonings</li>
+                  </div>
+                  <div class="con">
+                    <li>Refinery</li>
+                  </div>
+                  <div class="con">
+                    <li>Mining</li>
+                  </div>
+                  <div class="con">
+                    <li>Fertilizer</li>
+                  </div>
+                  <div class="con">
+                    <li>Energy</li>
+                  </div>
+                  <div class="con">
+                    <li>Logistics</li>
+                  </div>
+                  <div class="con">
+                    <li>Infrastructure</li>
+                  </div>
+                  <div class="con">
+                    <li>Petrochemicals</li>
+                  </div>
+                  <div class="con">
+                    <li>Maritime</li>
+                  </div>
+                  <div class="con">
+                    <li>Tomato Farming</li>
+                  </div>
+                  <div class="con">
+                    <li>Training Academy</li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li class="dropdown"><a href="#">Aliko Dangote Foundation</a>
+            <div class="drop-content" style="width: auto;height: auto; text-align: center;">
+              <ul>
+                <li style="text-align: center;padding: 5px; color: blue;font-size: 12px;">Our schemes
+                </li>
+              </ul>
+          </li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Contact</a></li>
+
+      </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/helper1.jpg" class="d-block w-100" alt="..."
+            style="height: 640px;object-fit: cover;position: relative;">
+          <div class="cap"
+            style="position: absolute; top: 50%; left: 28%; transform: translate(-50%, -50%); color: white; text-align: justify;">
+            <h1 style="font-weight: bolder;">An Empowered Africa</h1>
+            <p style="font-size: 18px;">Where everyone has the opportunity to thrive.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/plate.jpg" class="d-block w-100" alt="..."
+            style="height: 640px;object-fit: cover;position: relative;">
+          <div class="cap"
+            style="position: absolute; top: 50%; left: 28%; transform: translate(-50%, -50%); color: white; text-align: justify;">
+            <h5>PETROCHEMICALS</h5>
+            <h1 style="font-weight: bolder;">Polypropylene</h1>
+            <p style="font-size: 18px;">Polypropylene (PP) is a widely used thermoplastic <br> polymer, produced through
+              the polymerisation of <br> propylene, a byproduct of petroleum and natural gas <br> refining. Known for
+              its versatility, strength, and <br> chemical resistance, polypropylene finds applications <br> across
+              numerous industries, including packaging, <br> automotive, textiles, healthcare, and consumer goods. <br>
+              It is lightweight, durable, and cost-effective, making <br> it a popular choice for both everyday products
+              and <br> specialised industrial uses.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/woman.jpg" class="d-block w-100" alt="..."
+            style="height: 640px;object-fit: cover;position: relative;">
+          <div class="cap"
+            style="position: absolute; top: 50%; left: 28%; transform: translate(-50%, -50%); color: white; text-align: justify;">
+            <h5>Aliko Dangote Foundation</h5>
+            <h1 style="font-weight: bolder;">Touching Lives</h1>
+            <p style="font-size: 18px;">Through interventions in healthcare, education, <br> economic empowerment and
+              distaster relief, we are <br> impacting the lives of millions of people across <br> Africa.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="box" style="margin: 50px;">
+    <h4 style="font-size: 40px;font-weight: bolder;">Providing Basic Needs</h4>
+    <p style="padding-top: 20px;">We are a diversified and fully integrated conglomerate. The Group’s interests span a
+      range of sectors in Nigeria and across Africa. </p>
+    <span style="padding-top: 25px;">The core business focus of the Group, which started operations in 1978, is to
+      provide local, value-added products and services that meet the ‘basic needs’ of the populace.</span>
+  </div>
+
+  <div class="vivian">
+    <h4>Our Businesses</h4>
+    </div>
+
+    <div class="container">
+      <p class="description">
+        As a diversified conglomerate, our interest in multiple industries indicates our determination to cater to our
+        vision of providing basic needs.
+      </p>
+      <div class="grid">
+        <div class="item">
+          <img src="images/cement.png.bv_resized_desktop.png.bv.webp" alt="Cement Manufacturing" />
+          <div class="caption">Cement Manufacturing</div>
+        </div>
+        <div class="item">
+          <img src="images/sugar-1.png.bv_resized_desktop.png.bv (1).webp" alt="Sugar Refining" />
+          <div class="caption">Sugar Refining</div>
+        </div>
+        <div class="item">
+          <img src="images/salt1.webp" alt="Salt Refining" />
+          <div class="caption">Salt Refining</div>
+        </div>
+        <div class="item">
+          <img src="images/oil1.webp" alt="Oil Refinery" style="height: 55%;">
+          <div class="caption">Oil Refinery</div>
+        </div>
+        <div class="item">
+          <img src="images/pack1.webp" alt="Packaging" style="height: 55%;">
+          <div class="caption">Packaging</div>
+        </div>
+        <div class="item">
+          <img src="images/ferlizer1.webp" alt="Fertilizer" style="height: 55%;">
+          <div class="caption">Fertilizer</div>
+        </div>
+         <div class="button-wrapper" style="margin-top: -150px;">
+        <button class="button-see-all">SEE ALL</button>
+        <button class="button-icon" aria-label="More options"></button>
+      </div>
+      </div>
+
+     
+    </div>
+  
+
+
+
+
+  <footer>
+    <div style="background: linear-gradient( rgb(0, 24, 120), rgb(21, 0, 90));width: 1351px;">
+      <div class="abc">
+        <div class="abcd">COMPANY</div>
+        <div class="abcd">BUSINESSES</div>
+        <div class="abcd">GENERAL INQUIRIES</div>
+        <div class="abcd">NEWSLETTER</div>
+        <div class="abcd">About Us</div>
+        <div class="abcd">Cement Manufacturing</div>
+        <div class="abcd">Call : +234 1 448 0815 +234 1 448 0816</div>
+        <div class="abcd">Join our weekly mailing list
+        </div>
+        <div class="abcd">Our businesses</div>
+        <div class="abcd">Sugar Refining</div>
+        <div class="abcd">Fax : +234 1 463 0316 +234 1 271 2231</div>
+        <div class="abcd"><input type="email" placeholder="Your Email"
+            style="background-color: #ffff;padding: 10px; width: 140px;border-radius: 4px; height: 45px;"><button
+            style="width: 80px;border-radius: 4px; height: 45px;color: white; background-color: #EC020C;">SUSCRIBE</button>
+        </div>
+        <div class="abcd">Investor Relations</div>
+        <div class="abcd">Salt Refinery & Seasonings</div>
+        <div class="abcd">Email: communications@dangote.com</div>
+        <div class="abcd"></div>
+        <div class="abcd">Aliko Dangote Foundation</div>
+        <div class="abcd">Dangote Fertilizer</div>
+        <div class="abcd"></div>
+        <div class="abcd"></div>
+        <div class="abcd">Career Opportunities</div>
+        <div class="abcd">Dangote Oil Refinery</div>
+        <div class="abcd"></div>
+        <div class="abcd"></div>
+        <div class="abcd">Contact Us</div>
+        <div class="abcd">View All Businesses</div>
+      </div>
+      <div class="foot">
+        <img src="images/dan1.svg" alt="">
+        <p>© 2025 Dangote Industries Limited.</p>
+        <p> Terms Of Use.</p>
+        <p> Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

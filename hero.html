@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+            align-items: center;
+            z-index: 2;
+
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #222;
+            margin-right: 15px;
+
+
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .drop-content {
+            display: none;
+            background-color: white;
+            padding: 10px;
+            position: absolute;
+            height: 200px;
+            border-radius: 3px;
+            width: 200px;
+            align-items: center;
+
+            ul {
+                list-style: none;
+            }
+
+            li {
+                padding: 15px 0;
+                padding-left: 15px;
+
+            }
+        }
+
+        .drop-content1 {
+            display: none;
+            background-color: white;
+            padding: 10px;
+            position: absolute;
+            border-radius: 3px;
+            align-items: center;
+
+            ul {
+                list-style: none;
+            }
+
+            li {
+                padding: 15px 0;
+                padding-left: 15px;
+
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                gap: 20px;
+                background: #fff;
+
+            }
+
+
+        }
+
+        .dropdown:hover .drop-content1 {
+            display: block;
+        }
+
+        .dropdown:hover .drop-content {
+            display: block;
+        }
+
+        .grid1 {
+            display: grid;
+            grid-template-columns: 286.66px 286.66px 286.66px;
+            grid-template-rows: 320px 320px 320px 320px 320px 320px;
+            gap: 20px;
+            position: relative;
+        }
+
+        .hmm img {
+            height: 320px;
+            width: 286.66px;
+            position: absolute;
+        }
+
+        h3 {
+            position: absolute;
+            color: white;
+            display: flex;
+            padding-top: 180px;
+            padding-left: 22px;
+            text-align: center;
+
+        }
+
+        .flex {
+            background-color: #fff;
+            height: 200px;
+            width: 286.66px;
+            /* display: flex; */
+            padding: 50px 10px;
+            /* border: 1px solid #000; */
+            box-shadow: 1px 1px 2px 0px grey;
+            /* box-sizing: border-box;
+            box-shadow:ipx 4px 6px rgba(0, 0, 0, 0.1); */
+
+
+
+
+        }
+
+        .flex img {
+            height: 40px;
+            width: 40px;
+            margin-bottom: 10px;
+            margin-left: 90px;
+            margin-top: 12px;
+
+        }
+
+        .flex p {
+            font-size: 22px;
+            font-weight: 500;
+            color: #212529;
+            /* padding-top: 55px; */
+            /* margin-left: 45px; */
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        .flex-con {
+
+            /* gap: 150px; */
+            padding: 50px 10px;
+            /* gap: 20px; */
+            background-color: #f5f5f5;
+            /* align-items: center; */
+            color: #212529;
+            height: 425.29px;
+            width: 1351px;
+            /* box-sizing: border-box; */
+
+
+        }
+
+        .flex-con h2 {
+            font-size: 24px;
+            font-weight: 600;
+            /* margin-bottom: 300px; */
+            text-align: center;
+            justify-content: center;
+            align-self: center;
+            /* padding-left: 400px; */
+            font-size: 23px;
+
+        }
+
+        .flexx {
+            display: grid;
+            grid-template-columns: 286.66px 286.66px 286.66px;
+            padding-top: 30px;
+            gap: 30px;
+            margin: 0px 172px 10px;
+            /* box-sizing: border-box;
+              box-shadow: #000;
+             */
+        }
+
+        .abc {
+            /* margin-top: 21px; */
+            /* padding-left: 20px; */
+            width: 1100px;
+            padding-top: 30px;
+            margin-left: 120px;
+            gap: 5px;
+            display: grid;
+            grid-template-columns: 285px 285px 285px 285px;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            padding-bottom: 50px;
+            border-bottom: 1px solid white;
+
+        }
+
+        .abcd {
+            /* margin-top: 32px; */
+            color: #fff;
+            /* padding: 15px 0; */
+            font-size: 14px;
+            /* border-bottom: 1px solid #555; */
+            /* text-align: center; */
+
+        }
+
+        .foot {
+            justify-content: space-between;
+            display: flex;
+           width: 1100px;
+            color: white;
+            padding-left: 100px;
+            padding-top: 45px;
+
+        }    
+    
+    </style>
+</head>
+
+<body>
+    <div class="hero-section">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="images/danvid.mp4">
+            </video>
+        </div>
+
+        <nav>
+            <div class="nav-content" style="position: fixed; margin: 0 105.5px; padding: 0 15px;">
+                <div>
+                    <img src="images/dan1.svg" alt="" style="height: 100;width: 53.39;padding-right: 63px;">
+                </div>
+                <ul class="nav-links">
+                    <li class="dropdown"><a href="#">About Us</a>
+                        <div class="drop-content" style="color:blue;font-size: 12px;">
+                            <ul>
+                                <li>Who We Are</li>
+                                <li>Vision & Mission</li>
+                                <li>Leadership</li>
+                                <li>History & Strategy</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown" a href="#" style="color:  #fff;">Our Businesses</a>
+                        <div class="drop-content1">
+                            <ul>
+                                <div class="grid"
+                                    style="padding-top: 35px;font-size: 12px;color: blue; padding-right: 65px; padding-left: 65px;width: 690px; height: auto; ">
+                                    <div class="con">
+                                        <li>Cement Manufacturing</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Rice Farming</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Polysacks</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Sugar Refining</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Automotive</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Real Estate</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Salt & Seasonings</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Refinery</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Mining</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Fertilizer</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Energy</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Logistics</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Infrastructure</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Petrochemicals</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Maritime</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Tomato Farming</li>
+                                    </div>
+                                    <div class="con">
+                                        <li>Training Academy</li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li class="dropdown"><a href="#">Aliko Dangote Foundation</a>
+                        <div class="drop-content" style="width: auto;height: auto; text-align: center;">
+                            <ul>
+                                <li style="text-align: center;padding: 5px; color: blue;font-size: 12px;">Our schemes
+                                </li>
+                            </ul>
+                    </li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact</a></li>
+
+            </div>
+        </nav>
+        <div style="align-items: center; display: flex; padding: 220px;">
+            <p style="font-size: 14px; color: #fff;position: absolute; font-size: 17px;">Our Businesses</p>
+
+            <h1 style="font-size: 14px; color: #fff;position: absolute; font-size: 32px;padding-top: 67px;">Providing
+                Your Basic Needs</h1>
+            <p style="font-size: 14px; color: #fff;position: absolute; padding-top: 200px;">With our transformational
+                projects and <br> businesses across food, shelter and construction, Dangote Group continues to grow its
+                vision of becoming the <br> leading provider of essential needs in Africa.</p>
+        </div>
+    </div>
+    <div class="grid1" style="padding-left: 240px;padding-top: 25px;">
+        <div class="hmm"><img src="images/cement-biz.png" alt="">
+            <h3>Cement Manufacturing</h3>
+        </div>
+        <div class="hmm"><img src="images/sugar-biz.png" alt="">
+            <h3>Sugar Manufacturing</h3>
+        </div>
+        <div class="hmm"><img src="images/salt-biz.png" alt="">
+            <h3>Salt & Seasonings</h3>
+        </div>
+        <div class="hmm"><img src="images/fertilizer-biz.png" alt="">
+            <h3>Fertilizer</h3>
+        </div>
+        <div class="hmm"><img src="images/infrastructure-biz.png" alt="">
+            <h3>Infrastructure</h3>
+        </div>
+        <div class="hmm"><img src="images/rice-biz-1.png" alt="">
+            <h3>Rice Farming</h3>
+        </div>
+        <div class="hmm"><img src="images/oil-biz.png" alt="">
+            <h3>Dangote petro refinery</h3>
+        </div>
+        <div class="hmm"><img src="images/energy-biz.png" alt="">
+            <h3>Energy</h3>
+        </div>
+        <div class="hmm"><img src="images/petro-biz.png" alt="">
+            <h3>Petrochemicals</h3>
+        </div>
+        <div class="hmm"><img src="images/poly-biz.png" alt="">
+            <h3>Packaging</h3>
+        </div>
+        <div class="hmm"><img src="images/rice-biz.png" alt="">
+            <h3>Real Estate</h3>
+        </div>
+        <div class="hmm"><img src="images/mine-biz.png" alt="">
+            <h3>Mining</h3>
+        </div>
+        <div class="hmm"><img src="images/logistics-biz.png" alt="">
+            <h3>Logistics</h3>
+        </div>
+        <div class="hmm"><img src="images/Maritime.png" alt="">
+            <h3>Maritime</h3>
+        </div>
+        <div class="hmm"><img src="images/automotive.png" alt="">
+            <h3>Automotive</h3>
+        </div>
+        <div class="hmm"><img src="images/Tomato-processing.jpg" alt="" style="padding-bottom: 50px;">
+            <h3>Tomato Farming</h3>
+        </div>
+        <div class="hmm"><img src="images/news.jpg" alt="" style="padding-bottom: 50px;">
+            <h3>Training Academy</h3>
+        </div>
+    </div>
+
+    <div class="flex-con">
+        <h2 style="font-size: 38px;"> Key Business Facts</h2>
+        <div class="flexx">
+
+            <div class="flex">
+                <img src="images/money.png" alt="" style="margin-bottom: 20px;">
+
+                <p>$4.3 billion</p>
+            </div>
+            <div class="flex">
+                <img src="images/sub.png" alt="">
+                <p>15 Subsidaries</p>
+            </div>
+            <div class="flex">
+                <img src="images/public.png" alt="">
+                <p>3 Public Listed <br> Companies</p>
+            </div>
+        </div>
+    </div>
+    <div>
+
+
+    </div>
+    <footer>
+        <div style="background: linear-gradient( rgb(0, 24, 120), rgb(21, 0, 90));width: 1351px;">
+            <div class="abc">
+                <div class="abcd">COMPANY</div>
+                <div class="abcd">BUSINESSES</div>
+                <div class="abcd">GENERAL INQUIRIES</div>
+                <div class="abcd">NEWSLETTER</div>
+                <div class="abcd">About Us</div>
+                <div class="abcd">Cement Manufacturing</div>
+                <div class="abcd">Call : +234 1 448 0815 +234 1 448 0816</div>
+                <div class="abcd">Join our weekly mailing list
+                </div>
+                <div class="abcd">Our businesses</div>
+                <div class="abcd">Sugar Refining</div>
+                <div class="abcd">Fax : +234 1 463 0316 +234 1 271 2231</div>
+                <div class="abcd"><input type="email" placeholder="Your Email"
+                        style="background-color: #ffff;padding: 10px; width: 140px;border-radius: 4px; height: 45px;"><button
+                        style="width: 80px;border-radius: 4px; height: 45px;color: white; background-color: #EC020C;">SUSCRIBE</button>
+                </div>
+                <div class="abcd">Investor Relations</div>
+                <div class="abcd">Salt Refinery & Seasonings</div>
+                <div class="abcd">Email: communications@dangote.com</div>
+                <div class="abcd"></div>
+                <div class="abcd">Aliko Dangote Foundation</div>
+                <div class="abcd">Dangote Fertilizer</div>
+                <div class="abcd"></div>
+                <div class="abcd"></div>
+                <div class="abcd">Career Opportunities</div>
+                <div class="abcd">Dangote Oil Refinery</div>
+                <div class="abcd"></div>
+                <div class="abcd"></div>
+                <div class="abcd">Contact Us</div>
+                <div class="abcd">View All Businesses</div>
+            </div>
+            <div class="foot">
+                <img src="images/dan1.svg" alt="">
+                <p>© 2025 Dangote Industries Limited.</p>
+                <p> Terms Of Use.</p>
+                <p> Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
